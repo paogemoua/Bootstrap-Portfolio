@@ -5,38 +5,42 @@
     <title>Paoge Moua's Portfolio</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width-device-width, initial-scale=1">
+    
+    <!-- Bootstrap CSS v4.1.3 -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <!-- Custom styles for sticky footer navbar -->
+    <link href="style.css" rel="stylesheet">
+
 </head>
 
 <body>
 <!-- Header :: 1 container - 5 boxes spans 1+6+10+6+1 with R&L of Name empty; navbar container @ end 4 1-column boxes -->
 
-<div class="container">
-    <div class="row">
-        <div class="col-1">&nbsp;</div>
-        <div class="col-6"></div>
-            <div class="container" style="z-index: 1;">
-                Paoge Moua
-            </div>
-        <div class="col-10">&nbsp;</div>
-        <div class="col-6"></div>
-            <div class="container">
-                <ul class="nav justify-content-end">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#" style="border-right-style: 2px solid black;">About</a>
+<header>
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-end">
+        <a class="navbar-brand" id="PaogeMoua" href="#">Paoge Moua</a>
+            <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+                <ul class="navbar-nav text-right">
+                    <li class="nav-item active">
+                        <a class="nav-link" id="About" href="#">About</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" style="border-right-style: 2px solid black;">Portfolio</a>
+                    <li class="nav-item active">
+                        <a class="nav-link" id="Portfolio" href="#">Portfolio</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                    <li class="nav-item active">
+                        <a class="nav-link" id="Contact" href="#">Contact</a>
                     </li>
                 </ul>
-            </div>      
-        <div class="col-1">&nbsp;</div>
-    </div>
-</div>
+            </div>
+    </nav>
+
+</header>
+
+<!-- Begin page content -->
 
 <!-- Main :: 1 container - 4 boxes spans 1+15+8 with R&L of About Me empty; About Me container 1 box top & 1 box down; 
     1 box down is container for img & txt -->
@@ -44,12 +48,32 @@
     <div class="row">
         <div class="col-1">&nbsp;</div>
         <div class="col-15">
-            <div class="container">
+            <div class="container" id="aboutMecontianer">
                 <div class="row">
                     <h2>About Me</h2>
                 </div>
                 <div class="row">
                     <div class="col" style="background-color: teal; height: 3px;">&nbsp;</div>
+                </div>
+                <br>
+                <div class="row">    
+                    <p><img id="imgMe" src="assets/images/Shringri_la_Paoge Moua_squared.jpg" alt="Me">
+                        <br><br> Intelligence is the ability to adapt to change. - Stephen Hawking <br><br>
+                
+                        "The credit belongs to the man who is actually in the arena; 
+                        whose face is marred with dust and sweat; who strives valiantly, 
+                        who errs and fall again and again, because there is no effort without error or shortcomings" - Theodore Roosevelt <br><br>
+                        
+                        Hi, my name is Paoge Moua.  I was born and raise in the Twin Cities! Go Vikings! 
+                        I went to St. Olaf College for my undergraduate study, and graduated in 2015 with a liberal arts degree.  
+                        Shortly after graduating, I work in various industries, specifically the culinary, non-profit, IT, retail management 
+                        and entrepreneurship.  From these experiences, I've learn three things about myself - 1) I'm a life-long learner, 
+                        2) I crave creative outlets and spontaneity, and 3) I love to lead and be apart of a strong team.
+                        
+                        For the next chapter in my life, I want to thrive in these areas.  
+                        I want to lead a resilient and spontaneous team that is passionate about learning and helping other succeed. 
+                        The next 6 months will be springboard to finding this team.
+                    </p>
                 </div>
                 <div class="row"></div>
             </div>
@@ -60,17 +84,14 @@
 
 </body>
 
-<footer>
 <!-- Footer & Copyright :: 1 container - 2 1-column boxes; Copyright centered -->
-<div class="container-fluid">
+<footer class="footer">
     <div class="row">
-        <div class="col" style="background-color: teal; height: 5px;"></div>
-    </div>
-    <div class="row">
-        <div class="col"></div>
-    </div>
-</div>
-
+        <div class="col-12">
+            <div class="container">
+                <span class="text">&copy; Copyright</span>
+            </div>
+        </div>
 </footer>
 
 </html>

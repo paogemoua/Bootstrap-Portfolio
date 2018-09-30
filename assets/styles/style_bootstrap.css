@@ -1,13 +1,10 @@
-/* ----- Codes for entire page ----- */
 /* Background - entire page */
 body {
     font-family: 'Arial', 'Helvetica Neue', 
     Helvetica, sans-serif;
-    background-image: url(../images/concrete_seamless.png);
+    background-image: url(assets/images/concrete_seamless.png); 
 }
 
-
-/* ----- Codes for Navbar ONLY ----- */
 /* Navbar styles */
 .navbar-brand
 {
@@ -23,7 +20,7 @@ body {
 
 /* Styling diff. parts of Navbar */
 #PaogeMoua {
-    background-color: teal; width: 195px; margin-left: 20%; font-size: 25px; font-weight: bold;
+    background-color: teal; width: 165px; margin-left: 15%; font-size: 25px; font-weight: bold;
 }
 
 #About {
@@ -38,7 +35,6 @@ body {
     border-right: 2px solid transparent; line-height: 15px; font-size: 25px;
 }
 
-/* ----- Codes for Main Contents in Body ONLY ----- */
 /* Styling for About Me - in main body */
 /* #aboutMecontianer {
     border: 5px solid green;
@@ -48,31 +44,6 @@ body {
     width: 200px; height: 200px;
 }
 
-.portfolioItem {
-    position: relative;
-    float: left;
-    width: 200px;
-}
-
-.portfolioItem h2 {
-    position: absolute;
-    bottom: 20px;
-    width: 100%;
-    padding: 15px;
-    background: #4aaaa5;
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    font-size: 20px;
-    font-weight: bold;
-    color: #ffffff;
-    text-align: center;
-}
-
-.btn {
-
-}
-
-
-/* ----- Codes for footer contents in Footer ONLY ----- */
 /* Sticky footer styles */
 html {
   position: relative;
